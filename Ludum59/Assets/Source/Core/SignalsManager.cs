@@ -42,29 +42,34 @@ public class SignalsManager : MonoBehaviour
     {
         _firstSignalCollected = true;
         PlayerPrefs.SetString("FirstSignalCollected", "True");
+        firstSignal.gameObject.SetActive(false);
     }
 
     public void CollectSecondSignal()
     {
         _secondSignalCollected = true;
         PlayerPrefs.SetString("SecondSignalCollected", "True");
+        secondSignal.gameObject.SetActive(false);
     }
 
     public void CollectThirdSignal()
     {
         _thirdSignalCollected = true;
         PlayerPrefs.SetString("ThirdSignalCollected", "True");
+        thirdSignal.gameObject.SetActive(false);
     }
 
     public void CollectFourthSignal()
     {
         _fourthSignalCollected = true;
         PlayerPrefs.SetString("FourthSignalCollected", "True");
+        fourthSignal.gameObject.SetActive(false);
     }
 
     public void CollectFifthSignal()
     {
         _fifthSignalCollected = true;
         PlayerPrefs.SetString("FifthSignalCollected", "True");
+        fifthSignal.gameObject.SetActive(false);    
     }
 }

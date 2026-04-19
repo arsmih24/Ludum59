@@ -42,9 +42,8 @@ namespace PlayerSystem
                 StartCoroutine(ExpolisionTimerCoroutine(star.ExplosionTimer));
             }
 
-            if (collision.gameObject.layer == signalLayer)
+            if ((signalLayer.value & (1 << collision.gameObject.layer)) != 0)
             {
-                Debug.Log("Signal");
                 _invoker.InvokeReturnPhotoButton().gameObject.SetActive(true);
 
                 if (collision.gameObject.CompareTag(FIRST_SIGNAL_TAG))
@@ -77,7 +76,7 @@ namespace PlayerSystem
                 StopAllCoroutines();
             }
 
-            if (collision.gameObject.layer == signalLayer) 
+            if ((signalLayer.value & (1 << collision.gameObject.layer)) != 0)
             {
                 _invoker.InvokeReturnPhotoButton().onClick.RemoveAllListeners();
                 _invoker.InvokeReturnPhotoButton().gameObject.SetActive(false);
