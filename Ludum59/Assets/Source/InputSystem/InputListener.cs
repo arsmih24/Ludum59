@@ -5,10 +5,10 @@ using PlayerSystem;
 public class InputListener : MonoBehaviour
 {
     private MainInputActions _mainInputActions;
-    private PlayerInvoker _invoker;
+    private Invoker _invoker;
     private Vector2 _inputValue;
 
-    public void Construct(PlayerInvoker invoker)
+    public void Construct(Invoker invoker)
     {
         _invoker = invoker;
     }
@@ -34,7 +34,7 @@ public class InputListener : MonoBehaviour
 
     private void OnStop(InputAction.CallbackContext context) 
     {
-        _invoker.InvokeStop();
+        _invoker.InvokeStopMovement();
         _inputValue = Vector2.zero;
     }
 

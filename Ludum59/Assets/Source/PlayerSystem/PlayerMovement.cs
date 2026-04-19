@@ -10,11 +10,13 @@ namespace PlayerSystem
         private bool _hasStickSet;
         private bool _isReversing;
 
-        public void Move(Vector2 inputDir, bool canChangeDir, Rigidbody2D rb, float maxSpeed, float accel, float turnSpeed, float decel)
+        public bool CanChangeDirection { get; set; } = true;
+
+        public void Move(Vector2 inputDir, Rigidbody2D rb, float maxSpeed, float accel, float turnSpeed, float decel)
         {
             Vector2 newInput = inputDir.normalized;
 
-            if (canChangeDir && newInput != Vector2.zero)
+            if (CanChangeDirection && newInput != Vector2.zero)
             {
                 if (_hasStickSet)
                 {
@@ -78,20 +80,25 @@ namespace PlayerSystem
             return _stickDirection;
         }
 
-        public void Stop(Rigidbody2D rb)
+        public void Stop()
         {
             _hasStickSet = false;
             _isReversing = false;
             _stickDirection = Vector2.zero;
         }
 
-        public void Reset()
+        public void Reset(Rigidbody2D rb)
         {
             _hasStickSet = false;
+            _isReversing = false;
             _stickDirection = Vector2.zero;
             _currentSpeed = 0f;
             _currentVelocity = Vector2.zero;
-            _isReversing = false;
+
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+            rb.simulated = false; 
         }
     }
 }
