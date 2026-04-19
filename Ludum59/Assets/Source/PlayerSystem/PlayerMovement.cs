@@ -8,8 +8,7 @@ namespace PlayerSystem
         private Vector2 _stickDirection;
         private float _currentSpeed;
         private bool _hasStickSet;
-        private bool _isReversing; 
-
+        private bool _isReversing;
 
         public void Move(Vector2 inputDir, bool canChangeDir, Rigidbody2D rb, float maxSpeed, float accel, float turnSpeed, float decel)
         {
@@ -73,11 +72,17 @@ namespace PlayerSystem
             rb.linearVelocity = _currentVelocity;
         }
 
+        public Vector2 GetTargetDirection()
+        {
+            if (!_hasStickSet) return Vector2.zero;
+            return _stickDirection;
+        }
+
         public void Stop(Rigidbody2D rb)
         {
             _hasStickSet = false;
             _isReversing = false;
-            _stickDirection = Vector2.zero; // ← ключевое исправление
+            _stickDirection = Vector2.zero;
         }
 
         public void Reset()

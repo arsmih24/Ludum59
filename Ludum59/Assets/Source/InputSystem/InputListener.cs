@@ -23,6 +23,8 @@ public class InputListener : MonoBehaviour
     private void FixedUpdate()
     {
         _invoker.InvokeMove(_inputValue);
+        _invoker.InvokeUpdateDirectionView();
+        _invoker.InvokeUpdateCoordinatesView();
     }
 
     private void OnMovement(InputAction.CallbackContext context)

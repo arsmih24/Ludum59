@@ -6,11 +6,13 @@ namespace PlayerSystem
     {
         private PlayerData _playerData;
         private PlayerMovement _playerMovement;
+        private PlayerView _playerView;
 
-        public PlayerInvoker(PlayerData playerData, PlayerMovement playerMovement)
+        public PlayerInvoker(PlayerData playerData, PlayerMovement playerMovement, PlayerView playerView)
         {
             _playerData = playerData;
             _playerMovement = playerMovement;
+            _playerView = playerView;
         }
 
         public void InvokeMove(Vector2 dir)
@@ -21,6 +23,16 @@ namespace PlayerSystem
         public void InvokeStop()
         {
             _playerMovement.Stop(_playerData.Rb);
+        }
+
+        public void InvokeUpdateDirectionView() 
+        {
+            _playerView.UpdateDirectionView(_playerMovement.GetTargetDirection());
+        }
+
+        public void InvokeUpdateCoordinatesView() 
+        {
+            _playerView.UpdateCoordinatesView(_playerData.Rb);
         }
     }
 }
