@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6568836331679665767}
   - component: {fileID: 4971040782754736588}
-  - component: {fileID: 443117549398008517}
   - component: {fileID: 2070253470554342338}
+  - component: {fileID: 3261560084385569417}
   - component: {fileID: 2869789646228102735}
-  m_Layer: 0
-  m_Name: Asteroid
+  m_Layer: 7
+  m_Name: Asteroid3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.02, y: -4.55, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,8 +84,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 5c07b87df9b59004a9ffa6c05bfa2061, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -94,8 +94,35 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!58 &443117549398008517
-CircleCollider2D:
+--- !u!50 &2070253470554342338
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3898849608913414499}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 3
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!60 &3261560084385569417
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,34 +156,47 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!50 &2070253470554342338
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3898849608913414499}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.64, y: 1.95}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.79999995, y: -0.305}
+      - {x: 0.78999996, y: -0.13499999}
+      - {x: 0.71999997, y: -0.065}
+      - {x: 0.59, y: 0.044999998}
+      - {x: 0.62, y: 0.235}
+      - {x: 0.65, y: 0.565}
+      - {x: 0.55, y: 0.655}
+      - {x: 0.38, y: 0.815}
+      - {x: 0.17, y: 0.965}
+      - {x: 0.099999994, y: 0.97499996}
+      - {x: 0.049999997, y: 0.97499996}
+      - {x: -0.14, y: 0.905}
+      - {x: -0.32, y: 0.825}
+      - {x: -0.41, y: 0.72499996}
+      - {x: -0.48999998, y: 0.525}
+      - {x: -0.63, y: 0.345}
+      - {x: -0.65999997, y: 0.295}
+      - {x: -0.81, y: -0.015}
+      - {x: -0.81, y: -0.145}
+      - {x: -0.74, y: -0.235}
+      - {x: -0.59999996, y: -0.375}
+      - {x: -0.57, y: -0.635}
+      - {x: -0.45, y: -0.715}
+      - {x: -0.14, y: -0.92499995}
+      - {x: 0.049999997, y: -0.965}
+      - {x: 0.24, y: -0.965}
+      - {x: 0.41, y: -0.885}
+      - {x: 0.74, y: -0.545}
+      - {x: 0.79999995, y: -0.45499998}
+  m_UseDelaunayMesh: 1
 --- !u!114 &2869789646228102735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Asteroid
   centerPoint: {fileID: 6568836331679665767}
-  wanderRadius: 1.5
-  speed: 0.3
+  wanderRadius: 2
+  speed: 0.25
   turnSpeed: 0.5
   noiseScale: 0.1

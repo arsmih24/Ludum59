@@ -73,7 +73,6 @@ namespace UiSystem
             {
                 _sequence.Add(Random.Range(0, 9));
             }
-            Debug.Log($"Новая последовательность: {string.Join(", ", _sequence)}");
         }
 
         private void ResetLights()

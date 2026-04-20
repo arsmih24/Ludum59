@@ -80,7 +80,7 @@ namespace PlayerSystem
 
             if ((signalLayer.value & (1 << collision.gameObject.layer)) != 0)
             {
-                _invoker.InvokeReturnPhotoButton().onClick.RemoveAllListeners();
+                _invoker.InvokeReturnPhotoButton().onClick.RemoveListener(_invoker.InvokeFifthSignalCollect);
                 _invoker.InvokePhotoButtonDeactivate();
             }
         }
