@@ -68,13 +68,11 @@ namespace PlayerSystem
         {
             if (collision.gameObject.TryGetComponent(out BlackHole blackHole))
             {
-                Debug.Log("Left Black Hole");
                 _invoker.InvokeStopBlackHoleLightBlinkCoroutine();
             }
 
             if (collision.gameObject.TryGetComponent(out Star star))
             {
-                Debug.Log("Left Star Radius");
                 _invoker.InvokeStopStarLightBlinkCoroutine();
                 StopCoroutine(_explosionTimerCoroutine);
                 _explosionTimerCoroutine = null;

@@ -99,6 +99,11 @@ public class Invoker
         _uiManager.StopStarLightBlinkCoroutine();
     }
 
+    public void InvokeActivateSignalPanel(Sprite signalSprite) 
+    {
+        _uiManager.ActivateSignalPanel(signalSprite);
+    }
+
     public void InvokeReloadGame() 
     {
         _uiManager.ReloadGame();

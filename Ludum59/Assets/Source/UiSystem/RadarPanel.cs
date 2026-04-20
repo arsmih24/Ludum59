@@ -1,6 +1,6 @@
 using System.Collections;
+using UiSystem;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class RadarPanel : MonoBehaviour
@@ -21,14 +21,21 @@ public class RadarPanel : MonoBehaviour
     [Space]
     [SerializeField] private Button closeButton;
 
+    private UiManager _uiManager;
     private Image _photoButtonImage;
     private Coroutine _blackHoleLigtBlinkCoroutine;
     private Coroutine _starLigtBlinkCoroutine;
 
+    public void Construct(UiManager uiManager) 
+    {
+        _uiManager = uiManager;
+    }
+
     private void Awake()
     {
         _photoButtonImage = photoButton.GetComponent<Image>();
-        closeButton.onClick.AddListener(Close);
+        photoButton.onClick.AddListener(_uiManager.StartMiniGame);
+        closeButton.onClick.AddListener(_uiManager.DeactivateRadarPanel);
     }
 
     private void Start()
@@ -97,13 +104,9 @@ public class RadarPanel : MonoBehaviour
         starLight.sprite = starLightOff;
     }
 
-    private void Close() 
-    {
-        gameObject.SetActive(false);
-    }
-
     private void OnDestroy()
     {
+        photoButton.onClick.RemoveAllListeners();
         closeButton.onClick.RemoveAllListeners();
     }
 }

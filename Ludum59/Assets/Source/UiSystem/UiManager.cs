@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,11 +10,18 @@ namespace UiSystem
         [SerializeField] private Image loadPanel;
         [SerializeField] private float fadeDuration = 1f;
         [Space]
+        [SerializeField] private Button radarButton;
+        [Space]
+        [SerializeField] private GameObject workspacePanel;
         [SerializeField] private RadarPanel radarPanel;
+        [SerializeField] private MemoryMiniGame miniGamePanel;
+        [Space]
+        [SerializeField] private SignalPanel signalPanel;
 
         private void Awake()
         {
             loadPanel.gameObject.SetActive(true);
+            radarButton.onClick.AddListener(ActivateRadarPanel);
         }
 
         private void Start()
@@ -34,6 +42,15 @@ namespace UiSystem
             {
                 Level.LoadNextLevel();
             });
+        }
+
+        public void ActivateRadarPanel() 
+        {
+            workspacePanel.SetActive(false);
+        }
+        public void DeactivateRadarPanel() 
+        {
+            workspacePanel.SetActive(true);
         }
 
         public Button ReturnPhotoButton() 
@@ -65,6 +82,22 @@ namespace UiSystem
         public void StopStarLightBlinkCoroutine() 
         {
             radarPanel.StopStarLightBlinkCoroutine();
+        }
+
+        public void StartMiniGame() 
+        {
+            miniGamePanel.StartMiniGame();
+        }
+
+        public void ActivateSignalPanel(Sprite signalSprite) 
+        {
+            signalPanel.Setup(signalSprite);
+            signalPanel.gameObject.SetActive(true);
+        }
+
+        private void OnDestroy()
+        {
+            radarButton.onClick.RemoveAllListeners();
         }
     }
 }

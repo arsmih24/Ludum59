@@ -7,7 +7,14 @@ public class SignalsManager : MonoBehaviour
     [SerializeField] private GameObject thirdSignal;
     [SerializeField] private GameObject fourthSignal;
     [SerializeField] private GameObject fifthSignal;
+    [Space]
+    [SerializeField] private Sprite firstSignalSprite;
+    [SerializeField] private Sprite secondSignalSprite;
+    [SerializeField] private Sprite thirdSignalSprite;
+    [SerializeField] private Sprite fourthSignalSprite;
+    [SerializeField] private Sprite fifthSignalSprite;
 
+    private Invoker _invoker;
     private bool _firstSignalCollected = false;
     private bool _secondSignalCollected = false;
     private bool _thirdSignalCollected = false;
@@ -19,6 +26,11 @@ public class SignalsManager : MonoBehaviour
     public bool ThiedSignalCollected => _thirdSignalCollected;
     public bool FourthSignalCollected => _fourthSignalCollected;
     public bool FifthSignalCollected => _fifthSignalCollected;
+
+    public void Construct(Invoker invoker) 
+    {
+        _invoker = invoker;
+    }
 
     private void Start()
     {
@@ -45,6 +57,7 @@ public class SignalsManager : MonoBehaviour
         _firstSignalCollected = true;
         PlayerPrefs.SetString("FirstSignalCollected", "True");
         firstSignal.gameObject.SetActive(false);
+        _invoker.InvokeActivateSignalPanel(firstSignalSprite);
     }
 
     public void CollectSecondSignal()
@@ -52,6 +65,7 @@ public class SignalsManager : MonoBehaviour
         _secondSignalCollected = true;
         PlayerPrefs.SetString("SecondSignalCollected", "True");
         secondSignal.gameObject.SetActive(false);
+        _invoker.InvokeActivateSignalPanel(secondSignalSprite);
     }
 
     public void CollectThirdSignal()
@@ -59,6 +73,7 @@ public class SignalsManager : MonoBehaviour
         _thirdSignalCollected = true;
         PlayerPrefs.SetString("ThirdSignalCollected", "True");
         thirdSignal.gameObject.SetActive(false);
+        _invoker.InvokeActivateSignalPanel(thirdSignalSprite);
     }
 
     public void CollectFourthSignal()
@@ -66,12 +81,14 @@ public class SignalsManager : MonoBehaviour
         _fourthSignalCollected = true;
         PlayerPrefs.SetString("FourthSignalCollected", "True");
         fourthSignal.gameObject.SetActive(false);
+        _invoker.InvokeActivateSignalPanel(fourthSignalSprite);
     }
 
     public void CollectFifthSignal()
     {
         _fifthSignalCollected = true;
         PlayerPrefs.SetString("FifthSignalCollected", "True");
-        fifthSignal.gameObject.SetActive(false);    
+        fifthSignal.gameObject.SetActive(false);
+        _invoker.InvokeActivateSignalPanel(fifthSignalSprite);
     }
 }

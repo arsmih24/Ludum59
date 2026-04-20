@@ -1,6 +1,7 @@
 using UnityEngine;
 using PlayerSystem;
 using UiSystem;
+using System;
 public class Bootstrapper : MonoBehaviour
 {
     [SerializeField] private PlayerData playerData;
@@ -9,7 +10,9 @@ public class Bootstrapper : MonoBehaviour
     [Space]
     [SerializeField] private SignalsManager signalsManager;
     [SerializeField] private InputListener inputListener;
+    [Space]
     [SerializeField] private UiManager uiManager;
+    [SerializeField] private RadarPanel radarPanel;
 
     private void Awake()
     {
@@ -18,5 +21,7 @@ public class Bootstrapper : MonoBehaviour
 
         inputListener.Construct(playerInvoker);
         playerCollision.Construct(playerInvoker);
+        signalsManager.Construct(playerInvoker);
+        radarPanel.Construct(uiManager);
     }
 }
