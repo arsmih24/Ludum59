@@ -61,8 +61,8 @@ namespace PlayerSystem
 
         public void UpdateCoordinatesView(Rigidbody2D playerRb) 
         {
-            coordinatesTextX.text = $"{Convert.ToInt64(playerRb.position.x)}";
-            coordinatesTextY.text = $"{Convert.ToInt64(playerRb.position.y)}";
+            coordinatesTextX.text = playerRb.position.x.ToString("F3");
+            coordinatesTextY.text = playerRb.position.y.ToString("F3");
         }
     }
 }

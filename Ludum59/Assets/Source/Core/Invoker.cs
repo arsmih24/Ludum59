@@ -29,7 +29,7 @@ public class Invoker
     {
         _playerMovement.Stop();
     }
-    public void InvokeResetMovement() 
+    public void InvokeResetMovement()
     {
         _playerMovement.Reset(_playerData.Rb);
     }
@@ -47,7 +47,7 @@ public class Invoker
         _playerView.UpdateCoordinatesView(_playerData.Rb);
     }
 
-    public void InvokeFirstSignalCollect() 
+    public void InvokeFirstSignalCollect()
     {
         _signalsManager.CollectFirstSignal();
     }
@@ -68,9 +68,35 @@ public class Invoker
         _signalsManager.CollectFifthSignal();
     }
 
-    public Button InvokeReturnPhotoButton() 
+    public Button InvokeReturnPhotoButton()
     {
         return _uiManager.ReturnPhotoButton();
+    }
+    public void InvokePhotoButtonActivate()
+    {
+        _uiManager.PhotoButtonActivate();
+    }
+    public void InvokePhotoButtonDeactivate()
+    {
+        _uiManager.PhotoButtonDeactivate();
+    }
+
+    public void InvokeStartBlackHoleLightBlinkCoroutine() 
+    {
+        _uiManager.StartBlackHoleLightBlinkCoroutine();
+    }
+    public void InvokeStopBlackHoleLightBlinkCoroutine() 
+    {
+        _uiManager.StopBlackHoleLightBlinkCoroutine();
+    }
+
+    public void InvokeStartStarLightBlinkCoroutine() 
+    {
+        _uiManager.StartStarLightBlinkCoroutine();
+    }
+    public void InvokeStopStarLightBlinkCoroutine() 
+    {
+        _uiManager.StopStarLightBlinkCoroutine();
     }
 
     public void InvokeReloadGame() 

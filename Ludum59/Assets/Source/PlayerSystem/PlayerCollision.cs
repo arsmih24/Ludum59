@@ -9,6 +9,7 @@ namespace PlayerSystem
         [SerializeField] private LayerMask signalLayer;
 
         private Invoker _invoker;
+        private Coroutine _explosionTimerCoroutine;
 
         private const string FIRST_SIGNAL_TAG = "FirstSignal";
         private const string SECOND_SIGNAL_TAG = "SecondSignal";
@@ -33,18 +34,18 @@ namespace PlayerSystem
         {
             if (collision.gameObject.TryGetComponent(out BlackHole blackHole))
             {
-                Debug.Log("Entered Black Hole");
+                _invoker.InvokeStartBlackHoleLightBlinkCoroutine();
             }
 
             if (collision.gameObject.TryGetComponent(out Star star))
             {
-                Debug.Log("Entered Star Radius");
-                StartCoroutine(ExpolisionTimerCoroutine(star.ExplosionTimer));
+                _invoker.InvokeStartStarLightBlinkCoroutine();
+                _explosionTimerCoroutine = StartCoroutine(ExpolisionTimerCoroutine(star.ExplosionTimer));
             }
 
             if ((signalLayer.value & (1 << collision.gameObject.layer)) != 0)
             {
-                _invoker.InvokeReturnPhotoButton().gameObject.SetActive(true);
+                _invoker.InvokePhotoButtonActivate();
 
                 if (collision.gameObject.CompareTag(FIRST_SIGNAL_TAG))
                     _invoker.InvokeReturnPhotoButton().onClick.AddListener(_invoker.InvokeFirstSignalCollect);
@@ -68,18 +69,21 @@ namespace PlayerSystem
             if (collision.gameObject.TryGetComponent(out BlackHole blackHole))
             {
                 Debug.Log("Left Black Hole");
+                _invoker.InvokeStopBlackHoleLightBlinkCoroutine();
             }
 
             if (collision.gameObject.TryGetComponent(out Star star))
             {
                 Debug.Log("Left Star Radius");
-                StopAllCoroutines();
+                _invoker.InvokeStopStarLightBlinkCoroutine();
+                StopCoroutine(_explosionTimerCoroutine);
+                _explosionTimerCoroutine = null;
             }
 
             if ((signalLayer.value & (1 << collision.gameObject.layer)) != 0)
             {
                 _invoker.InvokeReturnPhotoButton().onClick.RemoveAllListeners();
-                _invoker.InvokeReturnPhotoButton().gameObject.SetActive(false);
+                _invoker.InvokePhotoButtonDeactivate();
             }
         }
 

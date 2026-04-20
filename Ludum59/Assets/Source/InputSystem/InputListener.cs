@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using PlayerSystem;
 
 public class InputListener : MonoBehaviour
 {

@@ -9,7 +9,7 @@ namespace UiSystem
         [SerializeField] private Image loadPanel;
         [SerializeField] private float fadeDuration = 1f;
         [Space]
-        [SerializeField] private Button photoButton;
+        [SerializeField] private RadarPanel radarPanel;
 
         private void Awake()
         {
@@ -28,7 +28,6 @@ namespace UiSystem
                 Level.ReloadLevel();
             });
         }
-
         public void EndGame()
         {
             loadPanel.DOFade(1, fadeDuration).OnComplete(() =>
@@ -39,7 +38,33 @@ namespace UiSystem
 
         public Button ReturnPhotoButton() 
         {
-            return photoButton;
+            return radarPanel.ReturnPhotoButton();
+        }
+        public void PhotoButtonActivate() 
+        {
+            radarPanel.PhotoButtonActivate();
+        }
+        public void PhotoButtonDeactivate()
+        {
+            radarPanel.PhotoButtonDeactivate();
+        }
+
+        public void StartBlackHoleLightBlinkCoroutine() 
+        {
+            radarPanel.StartBlackHoleLightBlinkCoroutine();
+        }
+        public void StopBlackHoleLightBlinkCoroutine() 
+        {
+            radarPanel.StopBlackHoleLightBlinkCoroutine();
+        }
+
+        public void StartStarLightBlinkCoroutine() 
+        {
+            radarPanel.StartStarLightBlinkCoroutine();
+        }
+        public void StopStarLightBlinkCoroutine() 
+        {
+            radarPanel.StopStarLightBlinkCoroutine();
         }
     }
 }

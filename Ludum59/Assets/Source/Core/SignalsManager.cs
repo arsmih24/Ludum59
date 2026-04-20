@@ -22,6 +22,8 @@ public class SignalsManager : MonoBehaviour
 
     private void Start()
     {
+        PlayerPrefs.DeleteAll();
+
         if (PlayerPrefs.HasKey("FirstSignalCollected"))
             CollectFirstSignal();
 
