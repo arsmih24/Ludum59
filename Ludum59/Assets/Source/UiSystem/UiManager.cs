@@ -10,11 +10,13 @@ namespace UiSystem
         [SerializeField] private float fadeDuration = 1f;
         [Space]
         [SerializeField] private Button radarButton;
+        [SerializeField] private Button prisonerButton;
         [SerializeField] private Button folderButton;
         [Space]
         [SerializeField] private GameObject workspacePanel;
         [SerializeField] private RadarPanel radarPanel;
         [SerializeField] private MemoryMiniGame miniGamePanel;
+        [SerializeField] private PrisonerPanel prisonerPanel;
         [SerializeField] private FolderPanel folderPanel;
         [SerializeField] private PausePanel pausePanel;
         [Space]
@@ -29,6 +31,7 @@ namespace UiSystem
         {
             loadPanel.gameObject.SetActive(true);
             radarButton.onClick.AddListener(ActivateRadarPanel);
+            prisonerButton.onClick.AddListener(ActivatePrisonerPanel);
             folderButton.onClick.AddListener(ActivateFolderPanel);
         }
 
@@ -69,7 +72,12 @@ namespace UiSystem
 
         private void ActivateFolderPanel() 
         {
-            folderPanel.Activate();
+            folderPanel.gameObject.SetActive(true);
+        }
+
+        private void ActivatePrisonerPanel() 
+        {
+            prisonerPanel.gameObject.SetActive(true);
         }
 
         public Button ReturnPhotoButton() 
@@ -132,6 +140,7 @@ namespace UiSystem
         private void OnDestroy()
         {
             radarButton.onClick.RemoveAllListeners();
+            prisonerButton.onClick.RemoveAllListeners();
             folderButton.onClick.RemoveAllListeners();
         }
     }

@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: 8ab72073ec2e6e54e85e1c382b313e54
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3363268152203084153
+    second: Signal 4 Coordinate_ x(40) y(-20)_0
+  - first:
+      213: -1521872305741316760
+    second: Signal 4 Coordinate_ x(40) y(-20)_1
+  - first:
+      213: -5000213513619869942
+    second: Signal 4 Coordinate_ x(40) y(-20)_2
+  - first:
+      213: -7808592484678772512
+    second: Signal 4 Coordinate_ x(40) y(-20)_3
+  - first:
+      213: 232339358051671653
+    second: Signal 4 Coordinate_ x(40) y(-20)_4
+  - first:
+      213: -7452044636500138861
+    second: Signal 4 Coordinate_ x(40) y(-20)_5
+  - first:
+      213: 5313553391022564553
+    second: Signal 4 Coordinate_ x(40) y(-20)_6
+  - first:
+      213: -7786408465151736434
+    second: Signal 4 Coordinate_ x(40) y(-20)_7
+  - first:
+      213: -8767801032289198327
+    second: Signal 4 Coordinate_ x(40) y(-20)_8
+  - first:
+      213: 4331311827667422493
+    second: Signal 4 Coordinate_ x(40) y(-20)_9
+  - first:
+      213: -7459005829427362594
+    second: Signal 4 Coordinate_ x(40) y(-20)_10
+  - first:
+      213: 416933458302443713
+    second: Signal 4 Coordinate_ x(40) y(-20)_11
+  - first:
+      213: 4330274423259052696
+    second: Signal 4 Coordinate_ x(40) y(-20)_12
+  - first:
+      213: -7719285263296405519
+    second: Signal 4 Coordinate_ x(40) y(-20)_13
+  - first:
+      213: 7958955285551571816
+    second: Signal 4 Coordinate_ x(40) y(-20)_14
+  - first:
+      213: 2880551731911562479
+    second: Signal 4 Coordinate_ x(40) y(-20)_15
+  - first:
+      213: 846155693122352113
+    second: Signal 4 Coordinate_ x(40) y(-20)_16
+  - first:
+      213: 4277433583416734382
+    second: Signal 4 Coordinate_ x(40) y(-20)_17
+  - first:
+      213: -4285706469155215955
+    second: Signal 4 Coordinate_ x(40) y(-20)_18
+  - first:
+      213: -7557150957937119938
+    second: Signal 4 Coordinate_ x(40) y(-20)_19
+  - first:
+      213: -524577636434737258
+    second: Signal 4 Coordinate_ x(40) y(-20)_20
+  - first:
+      213: -7212203968994981068
+    second: Signal 4 Coordinate_ x(40) y(-20)_21
+  - first:
+      213: 6527668362679281873
+    second: Signal 4 Coordinate_ x(40) y(-20)_22
+  - first:
+      213: 6307628342632074730
+    second: Signal 4 Coordinate_ x(40) y(-20)_23
+  - first:
+      213: 4956432744745758354
+    second: Signal 4 Coordinate_ x(40) y(-20)_24
+  - first:
+      213: 6175817339773039918
+    second: Signal 4 Coordinate_ x(40) y(-20)_25
+  - first:
+      213: -4582307736821222576
+    second: Signal 4 Coordinate_ x(40) y(-20)_26
+  - first:
+      213: -394435617324306718
+    second: Signal 4 Coordinate_ x(40) y(-20)_27
+  - first:
+      213: -5271106460767255671
+    second: Signal 4 Coordinate_ x(40) y(-20)_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78efc875f654351d0800000000000000
+      internalID: -3363268152203084153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 40
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86db8ce733931eae0800000000000000
+      internalID: -1521872305741316760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_2
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 39
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f64973d4cab9ab0800000000000000
+      internalID: -5000213513619869942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 40
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8dfe2c18e42a390800000000000000
+      internalID: -7808592484678772512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 40
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e13084a6f693300800000000000000
+      internalID: 232339358051671653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 40
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394ed0fb2e4059890800000000000000
+      internalID: -7452044636500138861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_6
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 40
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4e8fe18a88db940800000000000000
+      internalID: 5313553391022564553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85498e41ce11f390800000000000000
+      internalID: -7786408465151736434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f59193a63825680800000000000000
+      internalID: -8767801032289198327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d8093b829eb1c30800000000000000
+      internalID: 4331311827667422493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_10
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed40a67b7b94c7890800000000000000
+      internalID: -7459005829427362594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_11
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 20
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0a71575ce39c500800000000000000
+      internalID: 416933458302443713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 20
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ab05a25a9381c30800000000000000
+      internalID: 4330274423259052696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_13
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff5f4993f69fd490800000000000000
+      internalID: -7719285263296405519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863e482f9a3e37e60800000000000000
+      internalID: 7958955285551571816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_15
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 20
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe499b1d986c9f720800000000000000
+      internalID: 2880551731911562479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f37b39ae162ebb00800000000000000
+      internalID: 846155693122352113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_17
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 28
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea271e96e2f7c5b30800000000000000
+      internalID: 4277433583416734382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_18
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 22
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5e8664cac1684c0800000000000000
+      internalID: -4285706469155215955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3da7264e3b9f1790800000000000000
+      internalID: -7557150957937119938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69781334b6358b8f0800000000000000
+      internalID: -524577636434737258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_21
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b446cb3ba19eb90800000000000000
+      internalID: -7212203968994981068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_22
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8ed017acfe69a50800000000000000
+      internalID: 6527668362679281873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_23
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed45c1fe82398750800000000000000
+      internalID: 6307628342632074730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_24
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e6faf2259c8c440800000000000000
+      internalID: 4956432744745758354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_25
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25bede4629e4b550800000000000000
+      internalID: 6175817339773039918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_26
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0533f37346f5860c0800000000000000
+      internalID: -4582307736821222576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_27
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee6f9655eea68af0800000000000000
+      internalID: -394435617324306718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 4 Coordinate_ x(40) y(-20)_28
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98383b8f99449d6b0800000000000000
+      internalID: -5271106460767255671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Signal 4 Coordinate_ x(40) y(-20)_0: -3363268152203084153
+      Signal 4 Coordinate_ x(40) y(-20)_1: -1521872305741316760
+      Signal 4 Coordinate_ x(40) y(-20)_10: -7459005829427362594
+      Signal 4 Coordinate_ x(40) y(-20)_11: 416933458302443713
+      Signal 4 Coordinate_ x(40) y(-20)_12: 4330274423259052696
+      Signal 4 Coordinate_ x(40) y(-20)_13: -7719285263296405519
+      Signal 4 Coordinate_ x(40) y(-20)_14: 7958955285551571816
+      Signal 4 Coordinate_ x(40) y(-20)_15: 2880551731911562479
+      Signal 4 Coordinate_ x(40) y(-20)_16: 846155693122352113
+      Signal 4 Coordinate_ x(40) y(-20)_17: 4277433583416734382
+      Signal 4 Coordinate_ x(40) y(-20)_18: -4285706469155215955
+      Signal 4 Coordinate_ x(40) y(-20)_19: -7557150957937119938
+      Signal 4 Coordinate_ x(40) y(-20)_2: -5000213513619869942
+      Signal 4 Coordinate_ x(40) y(-20)_20: -524577636434737258
+      Signal 4 Coordinate_ x(40) y(-20)_21: -7212203968994981068
+      Signal 4 Coordinate_ x(40) y(-20)_22: 6527668362679281873
+      Signal 4 Coordinate_ x(40) y(-20)_23: 6307628342632074730
+      Signal 4 Coordinate_ x(40) y(-20)_24: 4956432744745758354
+      Signal 4 Coordinate_ x(40) y(-20)_25: 6175817339773039918
+      Signal 4 Coordinate_ x(40) y(-20)_26: -4582307736821222576
+      Signal 4 Coordinate_ x(40) y(-20)_27: -394435617324306718
+      Signal 4 Coordinate_ x(40) y(-20)_28: -5271106460767255671
+      Signal 4 Coordinate_ x(40) y(-20)_3: -7808592484678772512
+      Signal 4 Coordinate_ x(40) y(-20)_4: 232339358051671653
+      Signal 4 Coordinate_ x(40) y(-20)_5: -7452044636500138861
+      Signal 4 Coordinate_ x(40) y(-20)_6: 5313553391022564553
+      Signal 4 Coordinate_ x(40) y(-20)_7: -7786408465151736434
+      Signal 4 Coordinate_ x(40) y(-20)_8: -8767801032289198327
+      Signal 4 Coordinate_ x(40) y(-20)_9: 4331311827667422493
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

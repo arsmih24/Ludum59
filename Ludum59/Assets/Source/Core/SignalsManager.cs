@@ -23,7 +23,7 @@ public class SignalsManager : MonoBehaviour
 
     public bool FirstSignalCollected => _firstSignalCollected;
     public bool SecondSignalCollected => _secondSignalCollected;
-    public bool ThiedSignalCollected => _thirdSignalCollected;
+    public bool ThirdSignalCollected => _thirdSignalCollected;
     public bool FourthSignalCollected => _fourthSignalCollected;
     public bool FifthSignalCollected => _fifthSignalCollected;
 
@@ -34,8 +34,6 @@ public class SignalsManager : MonoBehaviour
 
     private void Start()
     {
-        PlayerPrefs.DeleteAll();
-
         if (PlayerPrefs.HasKey("FirstSignalCollected"))
             CollectFirstSignal();
 
@@ -56,6 +54,7 @@ public class SignalsManager : MonoBehaviour
     {
         _firstSignalCollected = true;
         PlayerPrefs.SetString("FirstSignalCollected", "True");
+        PlayerPrefs.SetString("HasSave", "True");
         firstSignal.gameObject.SetActive(false);
         _invoker.InvokeActivateSignalPanel(firstSignalSprite);
     }
@@ -64,6 +63,7 @@ public class SignalsManager : MonoBehaviour
     {
         _secondSignalCollected = true;
         PlayerPrefs.SetString("SecondSignalCollected", "True");
+        PlayerPrefs.SetString("HasSave", "True");
         secondSignal.gameObject.SetActive(false);
         _invoker.InvokeActivateSignalPanel(secondSignalSprite);
     }
@@ -72,6 +72,7 @@ public class SignalsManager : MonoBehaviour
     {
         _thirdSignalCollected = true;
         PlayerPrefs.SetString("ThirdSignalCollected", "True");
+        PlayerPrefs.SetString("HasSave", "True");
         thirdSignal.gameObject.SetActive(false);
         _invoker.InvokeActivateSignalPanel(thirdSignalSprite);
     }
@@ -80,6 +81,7 @@ public class SignalsManager : MonoBehaviour
     {
         _fourthSignalCollected = true;
         PlayerPrefs.SetString("FourthSignalCollected", "True");
+        PlayerPrefs.SetString("HasSave", "True");
         fourthSignal.gameObject.SetActive(false);
         _invoker.InvokeActivateSignalPanel(fourthSignalSprite);
     }
@@ -88,6 +90,7 @@ public class SignalsManager : MonoBehaviour
     {
         _fifthSignalCollected = true;
         PlayerPrefs.SetString("FifthSignalCollected", "True");
+        PlayerPrefs.SetString("HasSave", "True");
         fifthSignal.gameObject.SetActive(false);
         _invoker.InvokeActivateSignalPanel(fifthSignalSprite);
     }

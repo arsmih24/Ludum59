@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: 08677c945b19feb43bd8257698ebf9d3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7501745714569679098
+    second: Signal 3 Coordinate_ x(32) y(27)_0
+  - first:
+      213: -4097852505736341257
+    second: Signal 3 Coordinate_ x(32) y(27)_1
+  - first:
+      213: 8693913569521243727
+    second: Signal 3 Coordinate_ x(32) y(27)_2
+  - first:
+      213: -1235771883768845629
+    second: Signal 3 Coordinate_ x(32) y(27)_3
+  - first:
+      213: -29799222255200473
+    second: Signal 3 Coordinate_ x(32) y(27)_4
+  - first:
+      213: 567591866711689724
+    second: Signal 3 Coordinate_ x(32) y(27)_5
+  - first:
+      213: 7397615266604485984
+    second: Signal 3 Coordinate_ x(32) y(27)_6
+  - first:
+      213: -2807287129259999111
+    second: Signal 3 Coordinate_ x(32) y(27)_7
+  - first:
+      213: 3797537060286098304
+    second: Signal 3 Coordinate_ x(32) y(27)_8
+  - first:
+      213: 1406759918894419149
+    second: Signal 3 Coordinate_ x(32) y(27)_9
+  - first:
+      213: 2277466929743723349
+    second: Signal 3 Coordinate_ x(32) y(27)_10
+  - first:
+      213: -4066578791298666848
+    second: Signal 3 Coordinate_ x(32) y(27)_11
+  - first:
+      213: -4313586278442015021
+    second: Signal 3 Coordinate_ x(32) y(27)_12
+  - first:
+      213: 5697822692351617904
+    second: Signal 3 Coordinate_ x(32) y(27)_13
+  - first:
+      213: -966096735377089753
+    second: Signal 3 Coordinate_ x(32) y(27)_14
+  - first:
+      213: 5318839126217981160
+    second: Signal 3 Coordinate_ x(32) y(27)_15
+  - first:
+      213: 5706632941891418317
+    second: Signal 3 Coordinate_ x(32) y(27)_16
+  - first:
+      213: 809284620211733263
+    second: Signal 3 Coordinate_ x(32) y(27)_17
+  - first:
+      213: -3873843789284935156
+    second: Signal 3 Coordinate_ x(32) y(27)_18
+  - first:
+      213: 6167537795301840953
+    second: Signal 3 Coordinate_ x(32) y(27)_19
+  - first:
+      213: -1889066825331811332
+    second: Signal 3 Coordinate_ x(32) y(27)_20
+  - first:
+      213: -4543835992151892592
+    second: Signal 3 Coordinate_ x(32) y(27)_21
+  - first:
+      213: -2311909562342548807
+    second: Signal 3 Coordinate_ x(32) y(27)_22
+  - first:
+      213: 152165589720857345
+    second: Signal 3 Coordinate_ x(32) y(27)_23
+  - first:
+      213: -8345972497380593867
+    second: Signal 3 Coordinate_ x(32) y(27)_24
+  - first:
+      213: 25197393789096164
+    second: Signal 3 Coordinate_ x(32) y(27)_25
+  - first:
+      213: -3571814484219816234
+    second: Signal 3 Coordinate_ x(32) y(27)_26
+  - first:
+      213: -7090806985398615953
+    second: Signal 3 Coordinate_ x(32) y(27)_27
+  - first:
+      213: 5808168297008309114
+    second: Signal 3 Coordinate_ x(32) y(27)_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fe3cfb40274e790800000000000000
+      internalID: -7501745714569679098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 40
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f814ad7bd08127c0800000000000000
+      internalID: -4097852505736341257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_2
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 39
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f461343445cf6a870800000000000000
+      internalID: 8693913569521243727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 40
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3caea84e408a9dee0800000000000000
+      internalID: -1235771883768845629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 40
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72755e6e3c1269ff0800000000000000
+      internalID: -29799222255200473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 40
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf940c8abcd70e700800000000000000
+      internalID: 567591866711689724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_6
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 40
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d87f604eb99a660800000000000000
+      internalID: 7397615266604485984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9708ee5ca338a09d0800000000000000
+      internalID: -2807287129259999111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08bebbb06df83b430800000000000000
+      internalID: 3797537060286098304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc85f161b0d58310800000000000000
+      internalID: 1406759918894419149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_10
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55bf2172b103b9f10800000000000000
+      internalID: 2277466929743723349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_11
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 20
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae618d822c9097c0800000000000000
+      internalID: -4066578791298666848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 20
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6e67552201324c0800000000000000
+      internalID: -4313586278442015021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_13
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b27c2ec8bb21f40800000000000000
+      internalID: 5697822692351617904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b1f25432cb792f0800000000000000
+      internalID: -966096735377089753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_15
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 20
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ecfbaf310050d940800000000000000
+      internalID: 5318839126217981160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 20
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8faf4fc68023f40800000000000000
+      internalID: 5706632941891418317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_17
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 28
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0348e503182b3b00800000000000000
+      internalID: 809284620211733263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_18
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 22
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a715029975d3ac0800000000000000
+      internalID: -3873843789284935156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93813c3a2fe779550800000000000000
+      internalID: 6167537795301840953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb5f172bbfa8c5e0800000000000000
+      internalID: -1889066825331811332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_21
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09dd62a4d3d01f0c0800000000000000
+      internalID: -4543835992151892592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_22
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba5eb780827aefd0800000000000000
+      internalID: -2311909562342548807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_23
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b79523cc99c1200800000000000000
+      internalID: 152165589720857345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_24
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f23748b362d2c80800000000000000
+      internalID: -8345972497380593867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_25
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0901a65e4895000800000000000000
+      internalID: 25197393789096164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_26
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d69b70a6ad5e6ec0800000000000000
+      internalID: -3571814484219816234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_27
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6005709d94689d90800000000000000
+      internalID: -7090806985398615953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Signal 3 Coordinate_ x(32) y(27)_28
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73adda0b42ca9050800000000000000
+      internalID: 5808168297008309114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Signal 3 Coordinate_ x(32) y(27)_0: -7501745714569679098
+      Signal 3 Coordinate_ x(32) y(27)_1: -4097852505736341257
+      Signal 3 Coordinate_ x(32) y(27)_10: 2277466929743723349
+      Signal 3 Coordinate_ x(32) y(27)_11: -4066578791298666848
+      Signal 3 Coordinate_ x(32) y(27)_12: -4313586278442015021
+      Signal 3 Coordinate_ x(32) y(27)_13: 5697822692351617904
+      Signal 3 Coordinate_ x(32) y(27)_14: -966096735377089753
+      Signal 3 Coordinate_ x(32) y(27)_15: 5318839126217981160
+      Signal 3 Coordinate_ x(32) y(27)_16: 5706632941891418317
+      Signal 3 Coordinate_ x(32) y(27)_17: 809284620211733263
+      Signal 3 Coordinate_ x(32) y(27)_18: -3873843789284935156
+      Signal 3 Coordinate_ x(32) y(27)_19: 6167537795301840953
+      Signal 3 Coordinate_ x(32) y(27)_2: 8693913569521243727
+      Signal 3 Coordinate_ x(32) y(27)_20: -1889066825331811332
+      Signal 3 Coordinate_ x(32) y(27)_21: -4543835992151892592
+      Signal 3 Coordinate_ x(32) y(27)_22: -2311909562342548807
+      Signal 3 Coordinate_ x(32) y(27)_23: 152165589720857345
+      Signal 3 Coordinate_ x(32) y(27)_24: -8345972497380593867
+      Signal 3 Coordinate_ x(32) y(27)_25: 25197393789096164
+      Signal 3 Coordinate_ x(32) y(27)_26: -3571814484219816234
+      Signal 3 Coordinate_ x(32) y(27)_27: -7090806985398615953
+      Signal 3 Coordinate_ x(32) y(27)_28: 5808168297008309114
+      Signal 3 Coordinate_ x(32) y(27)_3: -1235771883768845629
+      Signal 3 Coordinate_ x(32) y(27)_4: -29799222255200473
+      Signal 3 Coordinate_ x(32) y(27)_5: 567591866711689724
+      Signal 3 Coordinate_ x(32) y(27)_6: 7397615266604485984
+      Signal 3 Coordinate_ x(32) y(27)_7: -2807287129259999111
+      Signal 3 Coordinate_ x(32) y(27)_8: 3797537060286098304
+      Signal 3 Coordinate_ x(32) y(27)_9: 1406759918894419149
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

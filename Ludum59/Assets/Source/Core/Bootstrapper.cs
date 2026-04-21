@@ -13,6 +13,7 @@ public class Bootstrapper : MonoBehaviour
     [Space]
     [SerializeField] private UiManager uiManager;
     [SerializeField] private RadarPanel radarPanel;
+    [SerializeField] private FolderPanel folderPanel;
     [SerializeField] private MemoryMiniGame miniGamePanel;
     [SerializeField] private PausePanel pausePanel;
 
@@ -25,6 +26,7 @@ public class Bootstrapper : MonoBehaviour
         playerCollision.Construct(playerInvoker);
         signalsManager.Construct(playerInvoker);
         radarPanel.Construct(uiManager);
+        folderPanel.Construct(signalsManager);
         miniGamePanel.Construct(uiManager);
         pausePanel.Construct(uiManager);
     }

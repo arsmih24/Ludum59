@@ -73,6 +73,8 @@ public class RadarPanel : MonoBehaviour
     }
     public void StartBlackHoleLightBlinkCoroutine() 
     {
+        if (_blackHoleLigtBlinkCoroutine != null) return;
+
         _blackHoleLigtBlinkCoroutine = StartCoroutine(BlackHoleLightBlinkCoroutine());
     }
     public void StopBlackHoleLightBlinkCoroutine()
@@ -95,6 +97,8 @@ public class RadarPanel : MonoBehaviour
     }
     public void StartStarLightBlinkCoroutine()
     {
+        if (_starLigtBlinkCoroutine != null) return;
+
         _starLigtBlinkCoroutine = StartCoroutine(StarLightBlinkCoroutine());
     }
     public void StopStarLightBlinkCoroutine()
