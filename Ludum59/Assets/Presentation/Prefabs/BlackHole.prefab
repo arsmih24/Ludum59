@@ -298,5 +298,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da9d67a39e2c3e140ae6ae12216f334e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstaclesSystem.BlackHole
-  maxGravityForce: 80
+  maxGravityForce: 90
   maxRadius: 9
