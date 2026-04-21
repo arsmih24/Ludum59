@@ -11,10 +11,12 @@ namespace UiSystem
         [SerializeField] private float fadeDuration = 1f;
         [Space]
         [SerializeField] private Button radarButton;
+        [SerializeField] private Button folderButton;
         [Space]
         [SerializeField] private GameObject workspacePanel;
         [SerializeField] private RadarPanel radarPanel;
         [SerializeField] private MemoryMiniGame miniGamePanel;
+        [SerializeField] private FolderPanel folderPanel;
         [Space]
         [SerializeField] private SignalPanel signalPanel;
 
@@ -22,6 +24,7 @@ namespace UiSystem
         {
             loadPanel.gameObject.SetActive(true);
             radarButton.onClick.AddListener(ActivateRadarPanel);
+            folderButton.onClick.AddListener(ActivateFolderPanel);
         }
 
         private void Start()
@@ -44,13 +47,24 @@ namespace UiSystem
             });
         }
 
-        public void ActivateRadarPanel() 
+        private void ActivateRadarPanel() 
         {
             workspacePanel.SetActive(false);
         }
         public void DeactivateRadarPanel() 
         {
             workspacePanel.SetActive(true);
+        }
+
+        public void ActivateSignalPanel(Sprite signalSprite)
+        {
+            signalPanel.Setup(signalSprite);
+            signalPanel.gameObject.SetActive(true);
+        }
+
+        private void ActivateFolderPanel() 
+        {
+            folderPanel.Activate();
         }
 
         public Button ReturnPhotoButton() 
@@ -89,15 +103,10 @@ namespace UiSystem
             miniGamePanel.StartMiniGame();
         }
 
-        public void ActivateSignalPanel(Sprite signalSprite) 
-        {
-            signalPanel.Setup(signalSprite);
-            signalPanel.gameObject.SetActive(true);
-        }
-
         private void OnDestroy()
         {
             radarButton.onClick.RemoveAllListeners();
+            folderButton.onClick.RemoveAllListeners();
         }
     }
 }
