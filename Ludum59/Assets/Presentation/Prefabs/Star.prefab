@@ -298,4 +298,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3dd178af2e4fc04193b544dc7ff594c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Star
-  explosionTimer: 5
+  explosionTimer: 8

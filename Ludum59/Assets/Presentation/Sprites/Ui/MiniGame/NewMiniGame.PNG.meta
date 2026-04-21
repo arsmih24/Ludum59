@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9f05f33685a23854da18611f0a829ec7
+guid: 180437009bd85804280a0f5526e3d5a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5773042626327215987
-    second: RadarPanel_0
+      213: 2407682097338311998
+    second: NewMiniGame_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RadarPanel_0
+      name: NewMiniGame_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2560
+        width: 2403
         height: 1440
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d800498715802efa0800000000000000
-      internalID: -5773042626327215987
+      spriteID: e35eaef6c1ec96120800000000000000
+      internalID: 2407682097338311998
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RadarPanel_0: -5773042626327215987
+      NewMiniGame_0: 2407682097338311998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
