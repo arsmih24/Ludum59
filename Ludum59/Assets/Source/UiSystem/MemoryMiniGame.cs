@@ -36,6 +36,12 @@ namespace UiSystem
         private bool _isGameActive = false;
         private bool _isWaitingForRestart = false;
         private Coroutine _gameCoroutine;
+        private UiManager _uiManager;
+
+        public void Construct(UiManager uiManager) 
+        {
+            _uiManager = uiManager;
+        }
 
         private void Awake()
         {
@@ -265,6 +271,7 @@ namespace UiSystem
         private void CloseMiniGame()
         {
             _isGameActive = false;
+            _uiManager.MiniGameClosed();
             gameObject.SetActive(false);
             Time.timeScale = 1f;
             SetButtonsInteractable(true);

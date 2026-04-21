@@ -104,6 +104,11 @@ public class Invoker
         _uiManager.ActivateSignalPanel(signalSprite);
     }
 
+    public void InvokeSetPause() 
+    {
+        _uiManager.SetPause();
+    }
+
     public void InvokeReloadGame() 
     {
         _uiManager.ReloadGame();

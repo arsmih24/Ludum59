@@ -1,5 +1,4 @@
 using DG.Tweening;
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,8 +16,14 @@ namespace UiSystem
         [SerializeField] private RadarPanel radarPanel;
         [SerializeField] private MemoryMiniGame miniGamePanel;
         [SerializeField] private FolderPanel folderPanel;
+        [SerializeField] private PausePanel pausePanel;
         [Space]
         [SerializeField] private SignalPanel signalPanel;
+
+        private bool _isMiniGameRunning = false;
+        private bool _isPaused = false;
+
+        public bool IsMiniGameRunning => _isMiniGameRunning;
 
         private void Awake()
         {
@@ -101,6 +106,27 @@ namespace UiSystem
         public void StartMiniGame() 
         {
             miniGamePanel.StartMiniGame();
+            _isMiniGameRunning = true;
+        }
+
+        public void MiniGameClosed() 
+        {
+            _isMiniGameRunning = false;
+        }
+
+        public void SetPause() 
+        {
+            if (!_isPaused)
+            {
+                pausePanel.StartPause();
+                _isPaused = true;
+            }
+
+            else if (_isPaused) 
+            {
+                pausePanel.EndPause();
+                _isPaused = false;
+            }
         }
 
         private void OnDestroy()

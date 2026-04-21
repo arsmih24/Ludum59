@@ -37,16 +37,23 @@ public class InputListener : MonoBehaviour
         _inputValue = Vector2.zero;
     }
 
+    private void OnPause(InputAction.CallbackContext context) 
+    {
+        _invoker.InvokeSetPause();
+    }
+
     private void Bind()
     {
         _mainInputActions.Game.Move.performed += OnMovement;
         _mainInputActions.Game.Stop.performed += OnStop;
+        _mainInputActions.Game.Pause.performed += OnPause;
     }
 
     private void Expose()
     {
         _mainInputActions.Game.Move.performed -= OnMovement;
         _mainInputActions.Game.Stop.performed -= OnStop;
+        _mainInputActions.Game.Pause.performed -= OnPause;
     }
 
     private void OnDestroy()
