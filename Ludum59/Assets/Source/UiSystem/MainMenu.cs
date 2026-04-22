@@ -29,7 +29,12 @@ namespace UiSystem
         private void StartGame()
         {
             PlayerPrefs.DeleteAll();
-            ContinueGame();
+            audioSource.PlayOneShot(buttonClip);
+
+            loadPanel.DOFade(1, fadeDuration).OnComplete(() =>
+            {
+                Level.LoadNextLevel();
+            });
         }
 
         private void ContinueGame() 
@@ -38,7 +43,7 @@ namespace UiSystem
 
             loadPanel.DOFade(1, fadeDuration).OnComplete(() =>
             {
-                Level.LoadNextLevel();
+                Level.LoadGame();
             });
         }
 

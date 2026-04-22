@@ -19356,14 +19356,14 @@ RectTransform:
   m_GameObject: {fileID: 730895783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.85, z: 1}
+  m_LocalScale: {x: 0.9, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 894209483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -517, y: -327}
+  m_AnchoredPosition: {x: -383.3, y: -231.4}
   m_SizeDelta: {x: 185, y: 174}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730895785
@@ -23325,7 +23325,7 @@ RectTransform:
   m_GameObject: {fileID: 894209482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3523526, y: 1.3537049, z: 1.2925922}
+  m_LocalScale: {x: 1, y: 0.95, z: 0.90412945}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 730895784}
@@ -23333,8 +23333,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -154, y: 61}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: -48, y: -11}
+  m_SizeDelta: {x: 2056.569, y: 1440}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894209484
 MonoBehaviour:
@@ -23369,7 +23369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d3e6f6a3672d3d34ea0800fbd4a99bd8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2fecc5ae44739414ea7d272416cd9d02, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -30150,7 +30150,7 @@ MonoBehaviour:
   wrongAnswerSound: {fileID: 8300000, guid: d3ad24cade1260d4097c6d711c05b4c8, type: 3}
   wrontgAnswerVolume: 0.4
   winGameSound: {fileID: 8300000, guid: fd3b37304257bfe4794e456b64f44f34, type: 3}
-  winGameVolume: 0.85
+  winGameVolume: 0.9
   keyboardSound: {fileID: 8300000, guid: 8f08d1a0122440d4886c62242d68fb69, type: 3}
   keyboardVolume: 0.5
   maxSequenceLength: 5
@@ -35742,7 +35742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1479404506
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38142,9 +38142,9 @@ RectTransform:
   - {fileID: 34851246}
   - {fileID: 2068776311}
   - {fileID: 1042242454}
+  - {fileID: 870073109}
   - {fileID: 434573041}
   - {fileID: 894209483}
-  - {fileID: 870073109}
   m_Father: {fileID: 1757383224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -38231,7 +38231,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 4c63ae1c877cbbd468b84f25f1e626db, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.37
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -38328,7 +38328,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 4c63ae1c877cbbd468b84f25f1e626db, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.37
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -21,7 +21,7 @@ namespace UiSystem
             closeButton.onClick.AddListener(Close);
         }
 
-        void OnEnable()
+        private void OnEnable()
         {
             ambientSource.Pause();
 
@@ -36,12 +36,12 @@ namespace UiSystem
             _videoPlayer.clip = videoClip;
             _videoPlayer.isLooping = true;
             _videoPlayer.playOnAwake = false;
-            _videoPlayer.SetDirectAudioVolume(0, 0.6f);
+            _videoPlayer.SetDirectAudioVolume(0, 0.5f);
 
             _videoPlayer.Play();
         }
 
-        void Cleanup()
+        private void Cleanup()
         {
             _videoPlayer.Stop();
             Destroy(_videoPlayer);

@@ -53,6 +53,8 @@ namespace UiSystem
 
             if (PlayerPrefs.HasKey("HasSave")) return;
             buddy.SetActive(true);
+
+            PlayerPrefs.SetString("HasSave", "True");
         }
 
         public void ReloadGame()

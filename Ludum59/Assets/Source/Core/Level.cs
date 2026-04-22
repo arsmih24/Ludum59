@@ -13,6 +13,11 @@ public static class Level
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public static void LoadGame() 
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
+
     public static void MainMenu()
     {
         SceneManager.LoadScene(0);
