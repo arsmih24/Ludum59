@@ -26,7 +26,7 @@ public class Bootstrapper : MonoBehaviour
         playerCollision.Construct(playerInvoker);
         signalsManager.Construct(playerInvoker);
         radarPanel.Construct(uiManager);
-        folderPanel.Construct(signalsManager);
+        folderPanel.Construct(signalsManager, uiManager);
         miniGamePanel.Construct(uiManager);
         pausePanel.Construct(uiManager);
     }

@@ -19,6 +19,9 @@ public class RadarPanel : MonoBehaviour
     [SerializeField] private Sprite photoButtonActivated;
     [SerializeField] private Sprite photoButtonDeactivated;
     [Space]
+    [SerializeField] private Button tutorButton;
+    [SerializeField] private GameObject tutorPanel;
+    [Space]
     [SerializeField] private Button closeButton;
 
     private UiManager _uiManager;
@@ -36,6 +39,7 @@ public class RadarPanel : MonoBehaviour
         _photoButtonImage = photoButton.GetComponent<Image>();
         photoButton.onClick.AddListener(_uiManager.StartMiniGame);
         closeButton.onClick.AddListener(_uiManager.DeactivateRadarPanel);
+        tutorButton.onClick.AddListener(OpenTutorPanel);
     }
 
     private void Start()
@@ -108,9 +112,15 @@ public class RadarPanel : MonoBehaviour
         starLight.sprite = starLightOff;
     }
 
+    private void OpenTutorPanel() 
+    {
+        tutorPanel.SetActive(true);
+    }
+
     private void OnDestroy()
     {
         photoButton.onClick.RemoveAllListeners();
         closeButton.onClick.RemoveAllListeners();
+        tutorButton.onClick.RemoveAllListeners();
     }
 }

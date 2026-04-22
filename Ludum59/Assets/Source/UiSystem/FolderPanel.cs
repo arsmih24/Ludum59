@@ -21,12 +21,16 @@ namespace UiSystem
         [SerializeField] private FilePanel audioFilePanel;
         [Space]
         [SerializeField] private Button closeButton;
+        [Space]
+        [SerializeField] private Button sendFilesButton;
 
         private SignalsManager _signalsManager;
+        private UiManager _uiManager;
 
-        public void Construct(SignalsManager signalsManager) 
+        public void Construct(SignalsManager signalsManager, UiManager uiManager) 
         {
             _signalsManager = signalsManager;
+            _uiManager = uiManager;
         }
 
         private void Awake()
@@ -39,6 +43,9 @@ namespace UiSystem
             audioFileButton.onClick.AddListener(AudioFileButton);
 
             closeButton.onClick.AddListener(Close);
+            sendFilesButton.onClick.AddListener(SendFiles);
+
+            sendFilesButton.interactable = false;
         }
 
         private void OnEnable()
@@ -92,6 +99,15 @@ namespace UiSystem
             audioFilePanel.Open(); 
         }
 
+        public void ActivateSendFilesButton() 
+        {
+            sendFilesButton.interactable = true;
+        }
+        private void SendFiles() 
+        {
+            _uiManager.EndGame();
+        }
+
         private void Close() 
         {
             gameObject.SetActive(false);
@@ -107,6 +123,7 @@ namespace UiSystem
             audioFileButton.onClick.RemoveAllListeners();
 
             closeButton.onClick.RemoveAllListeners();
+            sendFilesButton.onClick.RemoveAllListeners();
         }
     }
 }

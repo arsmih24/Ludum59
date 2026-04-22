@@ -12,15 +12,24 @@ namespace UiSystem
         [SerializeField] private Button radarButton;
         [SerializeField] private Button prisonerButton;
         [SerializeField] private Button folderButton;
+        [SerializeField] private Button trashButton;
+        [SerializeField] private Button welcomeFileButton;
+        [SerializeField] private Button prisonerFileButton;
         [Space]
         [SerializeField] private GameObject workspacePanel;
         [SerializeField] private RadarPanel radarPanel;
         [SerializeField] private MemoryMiniGame miniGamePanel;
         [SerializeField] private PrisonerPanel prisonerPanel;
         [SerializeField] private FolderPanel folderPanel;
+        [SerializeField] private TrashPanel trashPanel;
         [SerializeField] private PausePanel pausePanel;
         [Space]
         [SerializeField] private SignalPanel signalPanel;
+        [Space]
+        [SerializeField] private GameObject welcomeFile;
+        [SerializeField] private GameObject prisonerFile;
+        [Space]
+        [SerializeField] private GameObject buddy;
 
         private bool _isMiniGameRunning = false;
         private bool _isPaused = false;
@@ -33,11 +42,17 @@ namespace UiSystem
             radarButton.onClick.AddListener(ActivateRadarPanel);
             prisonerButton.onClick.AddListener(ActivatePrisonerPanel);
             folderButton.onClick.AddListener(ActivateFolderPanel);
+            trashButton.onClick.AddListener(ActivateTrashPanel);
+            welcomeFileButton.onClick.AddListener(OpenWelcomeFile);
+            prisonerFileButton.onClick.AddListener(OpenPrisonerFile);
         }
 
         private void Start()
         {
             loadPanel.DOFade(0, fadeDuration);
+
+            if (PlayerPrefs.HasKey("HasSave")) return;
+            buddy.SetActive(true);
         }
 
         public void ReloadGame()
@@ -53,6 +68,15 @@ namespace UiSystem
             {
                 Level.LoadNextLevel();
             });
+        }
+
+        private void OpenWelcomeFile() 
+        {
+            welcomeFile.SetActive(true);
+        }
+        private void OpenPrisonerFile() 
+        {
+            prisonerFile.SetActive(true);
         }
 
         private void ActivateRadarPanel() 
@@ -78,6 +102,11 @@ namespace UiSystem
         private void ActivatePrisonerPanel() 
         {
             prisonerPanel.gameObject.SetActive(true);
+        }
+
+        private void ActivateTrashPanel() 
+        {
+            trashPanel.gameObject.SetActive(true);
         }
 
         public Button ReturnPhotoButton() 
@@ -122,6 +151,11 @@ namespace UiSystem
             _isMiniGameRunning = false;
         }
 
+        public void ActivateSendFilesButton() 
+        {
+            folderPanel.ActivateSendFilesButton();
+        }
+
         public void SetPause() 
         {
             if (!_isPaused)
@@ -142,6 +176,9 @@ namespace UiSystem
             radarButton.onClick.RemoveAllListeners();
             prisonerButton.onClick.RemoveAllListeners();
             folderButton.onClick.RemoveAllListeners();
+            trashButton.onClick.RemoveAllListeners();
+            welcomeFileButton.onClick.RemoveAllListeners();
+            prisonerFileButton.onClick.RemoveAllListeners();
         }
     }
 }

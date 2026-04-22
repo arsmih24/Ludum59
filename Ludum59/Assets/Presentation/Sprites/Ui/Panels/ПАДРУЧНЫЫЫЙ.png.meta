@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3277a4a3914789b4aa7389edd05e7145
+guid: 49826771fd2404d40b2a817311334dcb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -591623714127221534
-    second: NewRadar_0
+      213: -680204448039335364
+    second: "\u041F\u0410\u0414\u0420\u0423\u0427\u041D\u042B\u042B\u042B\u0419_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NewRadar_0
+      name: "\u041F\u0410\u0414\u0420\u0423\u0427\u041D\u042B\u042B\u042B\u0419_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ecefb6dd512ac7f0800000000000000
-      internalID: -591623714127221534
+      spriteID: c3a89fb88ad6f86f0800000000000000
+      internalID: -680204448039335364
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      NewRadar_0: -591623714127221534
+      "\u041F\u0410\u0414\u0420\u0423\u0427\u041D\u042B\u042B\u042B\u0419_0": -680204448039335364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

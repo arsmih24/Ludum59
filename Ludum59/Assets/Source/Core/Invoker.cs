@@ -104,6 +104,11 @@ public class Invoker
         _uiManager.ActivateSignalPanel(signalSprite);
     }
 
+    public void InvokeActivateSendFilesButton() 
+    {
+        _uiManager.ActivateSendFilesButton();
+    }
+
     public void InvokeSetPause() 
     {
         _uiManager.SetPause();

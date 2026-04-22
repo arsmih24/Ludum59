@@ -57,6 +57,8 @@ public class SignalsManager : MonoBehaviour
         PlayerPrefs.SetString("HasSave", "True");
         firstSignal.gameObject.SetActive(false);
         _invoker.InvokeActivateSignalPanel(firstSignalSprite);
+
+        CheckCollectedSignals();
     }
 
     public void CollectSecondSignal()
@@ -66,6 +68,8 @@ public class SignalsManager : MonoBehaviour
         PlayerPrefs.SetString("HasSave", "True");
         secondSignal.gameObject.SetActive(false);
         _invoker.InvokeActivateSignalPanel(secondSignalSprite);
+
+        CheckCollectedSignals();
     }
 
     public void CollectThirdSignal()
@@ -75,6 +79,8 @@ public class SignalsManager : MonoBehaviour
         PlayerPrefs.SetString("HasSave", "True");
         thirdSignal.gameObject.SetActive(false);
         _invoker.InvokeActivateSignalPanel(thirdSignalSprite);
+
+        CheckCollectedSignals();
     }
 
     public void CollectFourthSignal()
@@ -84,6 +90,8 @@ public class SignalsManager : MonoBehaviour
         PlayerPrefs.SetString("HasSave", "True");
         fourthSignal.gameObject.SetActive(false);
         _invoker.InvokeActivateSignalPanel(fourthSignalSprite);
+
+        CheckCollectedSignals();
     }
 
     public void CollectFifthSignal()
@@ -93,5 +101,14 @@ public class SignalsManager : MonoBehaviour
         PlayerPrefs.SetString("HasSave", "True");
         fifthSignal.gameObject.SetActive(false);
         _invoker.InvokeActivateSignalPanel(fifthSignalSprite);
+
+        CheckCollectedSignals();
+    }
+
+    private void CheckCollectedSignals() 
+    {
+        if (_fifthSignalCollected && _secondSignalCollected && _thirdSignalCollected &&
+            _fourthSignalCollected && _fifthSignalCollected)
+            _invoker.InvokeActivateSendFilesButton();
     }
 }
