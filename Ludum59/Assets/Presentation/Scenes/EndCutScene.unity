@@ -649,9 +649,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UiSystem.CutScenePanel
   rawImage: {fileID: 2103560219}
-  videoClip: {fileID: 32900000, guid: 3cfadf3fd3498374a8871204f6eeccac, type: 3}
-  volume: 0.7
-  timer: 94
+  videoClip: {fileID: 32900000, guid: d74b59216c2ad8e49bc2b968a1132c56, type: 3}
+  volume: 0.5
+  timer: 81
   loadPanel: {fileID: 1409145656}
   fadeDuration: 1.5
   menuButton: {fileID: 520365142}
@@ -672,7 +672,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.45
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
