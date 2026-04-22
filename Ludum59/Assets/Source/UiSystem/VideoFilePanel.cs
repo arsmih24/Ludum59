@@ -10,6 +10,8 @@ namespace UiSystem
         [SerializeField] private VideoClip videoClip;
         [Space]
         [SerializeField] private Button closeButton;
+        [Space]
+        [SerializeField] private AudioSource ambientSource;
 
         private VideoPlayer _videoPlayer;
         private RenderTexture _renderTexture;
@@ -21,6 +23,8 @@ namespace UiSystem
 
         void OnEnable()
         {
+            ambientSource.Pause();
+
             _renderTexture = new RenderTexture(1920, 1080, 0);
             _renderTexture.Create();
 
@@ -32,7 +36,7 @@ namespace UiSystem
             _videoPlayer.clip = videoClip;
             _videoPlayer.isLooping = true;
             _videoPlayer.playOnAwake = false;
-            _videoPlayer.SetDirectAudioVolume(0, 0.5f);
+            _videoPlayer.SetDirectAudioVolume(0, 0.6f);
 
             _videoPlayer.Play();
         }
@@ -57,6 +61,7 @@ namespace UiSystem
 
         private void OnDisable()
         {
+            ambientSource.Play();
             Cleanup();
         }
 

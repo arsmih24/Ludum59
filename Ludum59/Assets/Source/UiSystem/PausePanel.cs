@@ -17,7 +17,7 @@ namespace UiSystem
 
         private void Awake()
         {
-            continueButton.onClick.AddListener(EndPause);
+            continueButton.onClick.AddListener(_uiManager.SetPause);
             exitButton.onClick.AddListener(Menu);
         }
 

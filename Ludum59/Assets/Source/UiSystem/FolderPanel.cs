@@ -26,6 +26,7 @@ namespace UiSystem
 
         private SignalsManager _signalsManager;
         private UiManager _uiManager;
+        private bool _canSendFiles = false;
 
         public void Construct(SignalsManager signalsManager, UiManager uiManager) 
         {
@@ -45,6 +46,7 @@ namespace UiSystem
             closeButton.onClick.AddListener(Close);
             sendFilesButton.onClick.AddListener(SendFiles);
 
+            if (_canSendFiles) return;
             sendFilesButton.interactable = false;
         }
 
@@ -101,6 +103,7 @@ namespace UiSystem
 
         public void ActivateSendFilesButton() 
         {
+            _canSendFiles = true;
             sendFilesButton.interactable = true;
         }
         private void SendFiles() 

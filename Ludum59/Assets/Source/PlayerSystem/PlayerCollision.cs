@@ -7,6 +7,10 @@ namespace PlayerSystem
     public class PlayerCollision : MonoBehaviour
     {
         [SerializeField] private LayerMask signalLayer;
+        [Space]
+        [SerializeField] private AudioSource audioSource;
+        [SerializeField] private AudioClip explosionClip;
+        [SerializeField, Range(0f, 1f)] float explosionVolume;
 
         private Invoker _invoker;
         private Coroutine _explosionTimerCoroutine;
@@ -94,6 +98,9 @@ namespace PlayerSystem
 
         private void Explode() 
         {
+            audioSource.volume = explosionVolume;
+            audioSource.PlayOneShot(explosionClip);
+
             _invoker.InvokeSetChangeDirection(false);
             _invoker.InvokeResetMovement();
             _invoker.InvokeReloadGame();

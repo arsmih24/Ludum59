@@ -8,12 +8,12 @@ public class RadarPanel : MonoBehaviour
     [SerializeField] private Image blackHoleLight;
     [SerializeField] private Sprite blackHoleLightOn;
     [SerializeField] private Sprite blackHoleLightOff;
-    [SerializeField] private float blackHoleLightBlinkPeriod = 0.5f;
+    [SerializeField] private float blackHoleLightBlinkPeriod = 1f;
     [Space]
     [SerializeField] private Image starLight;
     [SerializeField] private Sprite starLightOn;
     [SerializeField] private Sprite starLightOff;
-    [SerializeField] private float starLightBlinkPeriod = 0.5f;
+    [SerializeField] private float starLightBlinkPeriod = 1f;
     [Space]
     [SerializeField] private Button photoButton;
     [SerializeField] private Sprite photoButtonActivated;
@@ -23,6 +23,9 @@ public class RadarPanel : MonoBehaviour
     [SerializeField] private GameObject tutorPanel;
     [Space]
     [SerializeField] private Button closeButton;
+    [Space]
+    [SerializeField] private AudioSource blackHoleSignalSource;
+    [SerializeField] private AudioSource starSignalSource;
 
     private UiManager _uiManager;
     private Image _photoButtonImage;
@@ -79,10 +82,12 @@ public class RadarPanel : MonoBehaviour
     {
         if (_blackHoleLigtBlinkCoroutine != null) return;
 
+        blackHoleSignalSource.Play();
         _blackHoleLigtBlinkCoroutine = StartCoroutine(BlackHoleLightBlinkCoroutine());
     }
     public void StopBlackHoleLightBlinkCoroutine()
     {
+        blackHoleSignalSource.Stop();
         StopCoroutine(_blackHoleLigtBlinkCoroutine);
         _blackHoleLigtBlinkCoroutine = null;
         blackHoleLight.sprite = blackHoleLightOff;
@@ -103,10 +108,12 @@ public class RadarPanel : MonoBehaviour
     {
         if (_starLigtBlinkCoroutine != null) return;
 
+        starSignalSource.Play();
         _starLigtBlinkCoroutine = StartCoroutine(StarLightBlinkCoroutine());
     }
     public void StopStarLightBlinkCoroutine()
     {
+        starSignalSource.Stop();
         StopCoroutine(_starLigtBlinkCoroutine);
         _starLigtBlinkCoroutine = null;
         starLight.sprite = starLightOff;

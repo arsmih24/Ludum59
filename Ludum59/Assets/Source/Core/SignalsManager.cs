@@ -34,20 +34,37 @@ public class SignalsManager : MonoBehaviour
 
     private void Start()
     {
-        if (PlayerPrefs.HasKey("FirstSignalCollected"))
-            CollectFirstSignal();
+        if (PlayerPrefs.HasKey("FirstSignalCollected")) 
+        {
+            _firstSignalCollected = true;
+            firstSignal.gameObject.SetActive(false);
+        }
 
-        if (PlayerPrefs.HasKey("SecondSignalCollected"))
-            CollectSecondSignal();
+        if (PlayerPrefs.HasKey("SecondSignalCollected")) 
+        {
+            _secondSignalCollected = true;
+            secondSignal.gameObject.SetActive(false);
+        }
 
-        if (PlayerPrefs.HasKey("ThirdSignalCollected"))
-            CollectThirdSignal();
+        if (PlayerPrefs.HasKey("ThirdSignalCollected")) 
+        {
+            _thirdSignalCollected = true;
+            thirdSignal.gameObject.SetActive(false);
+        }
 
-        if (PlayerPrefs.HasKey("FourthSignalCollected"))
-            CollectFourthSignal();
+        if (PlayerPrefs.HasKey("FourthSignalCollected")) 
+        {
+            _fourthSignalCollected = true;
+            fourthSignal.gameObject.SetActive(false);
+        }
 
-        if (PlayerPrefs.HasKey("FifthSignalCollected"))
-            CollectFifthSignal();
+        if (PlayerPrefs.HasKey("FifthSignalCollected")) 
+        {
+            _fifthSignalCollected = true;
+            fifthSignal.gameObject.SetActive(false);
+        }
+
+        CheckCollectedSignals();
     }
 
     public void CollectFirstSignal()
@@ -107,8 +124,10 @@ public class SignalsManager : MonoBehaviour
 
     private void CheckCollectedSignals() 
     {
-        if (_fifthSignalCollected && _secondSignalCollected && _thirdSignalCollected &&
-            _fourthSignalCollected && _fifthSignalCollected)
+        if (_firstSignalCollected && _secondSignalCollected && _thirdSignalCollected &&
+            _fourthSignalCollected && _fifthSignalCollected) 
+        {
             _invoker.InvokeActivateSendFilesButton();
+        }
     }
 }

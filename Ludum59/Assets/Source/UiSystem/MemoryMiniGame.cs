@@ -21,10 +21,18 @@ namespace UiSystem
         [SerializeField] private Sprite lightOnSprite;
         [Space]
         [SerializeField] private AudioSource audioSource;
+        [Space]
         [SerializeField] private AudioClip showSymbolSound;
-        [SerializeField] private AudioClip correctAnswerSound;
+        [SerializeField, Range(0f, 1f)] private float showSymbolVolume;
+        [Space]
         [SerializeField] private AudioClip wrongAnswerSound;
+        [SerializeField, Range(0f, 1f)] private float wrontgAnswerVolume;
+        [Space]
         [SerializeField] private AudioClip winGameSound;
+        [SerializeField, Range(0f, 1f)] private float winGameVolume;
+        [Space]
+        [SerializeField] private AudioClip keyboardSound;
+        [SerializeField, Range(0f, 1f)] private float keyboardVolume;
         [Space]
         [SerializeField] private int maxSequenceLength = 5;
 
@@ -166,7 +174,8 @@ namespace UiSystem
 
                 symbolDisplay.sprite = symbolSprites[symbolIndex];
                 symbolDisplay.gameObject.SetActive(true);
-                PlaySound(showSymbolSound);
+                audioSource.volume = showSymbolVolume;
+                audioSource.PlayOneShot(showSymbolSound);
 
                 yield return WaitRealtime(displayDuration);
 
@@ -199,7 +208,6 @@ namespace UiSystem
             {
                 _currentPlayerIndex++;
                 LightUpProgress(_currentPlayerIndex - 1);
-                PlaySound(correctAnswerSound);
 
                 if (_currentPlayerIndex > _currentDisplayIndex)
                 {
@@ -218,7 +226,8 @@ namespace UiSystem
             _isShowingSequence = true;
             _isWaitingForRestart = true;
             SetButtonsInteractable(false);
-            PlaySound(wrongAnswerSound);
+            audioSource.volume = wrontgAnswerVolume;
+            audioSource.PlayOneShot(wrongAnswerSound);
 
             for (int i = 0; i < 3; i++)
             {
@@ -247,7 +256,8 @@ namespace UiSystem
             _isPlayerTurn = false;
             _isShowingSequence = true;
             SetButtonsInteractable(false);
-            PlaySound(winGameSound);
+            audioSource.volume = winGameVolume;
+            audioSource.PlayOneShot(winGameSound);
 
             for (int i = 0; i < 3; i++)
             {
@@ -270,6 +280,8 @@ namespace UiSystem
 
         private void CloseMiniGame()
         {
+            audioSource.volume = keyboardVolume;
+            audioSource.PlayOneShot(keyboardSound);
             _isGameActive = false;
             _uiManager.MiniGameClosed();
             gameObject.SetActive(false);
